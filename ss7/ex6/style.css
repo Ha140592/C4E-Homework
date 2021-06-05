@@ -1,0 +1,6 @@
+div.item > :first-child{
+    font-weight: bold;
+}
+div.item > :nth-child(2) {
+    font-style: italic;
+  }
