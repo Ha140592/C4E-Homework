@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav-menu {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(170, 81, 96, 0.637);
+            font-weight: bold;
+            position: relative;
+        }
+        div.menu {
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .menu:hover {  
+            color: white;
+            background-color: rgba(152, 251, 152, 0.521);
+        }
+        .sub-menu {
+            display: none;
+            position: absolute;
+            color: black;
+            background-color:rgba(170, 81, 96, 0.637);
+            top: 38px;
+            left: 0px;
+            justify-content: center;
+        }
+        .sub-menu div {
+            padding-top: 5px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 5px;
+        }
+        .menu-3 {
+            display: none;
+            position: absolute;
+            color: black;
+            background-color:rgba(170, 81, 96, 0.637);
+            top: 38px;
+            left: 0px;
+            justify-content: center;
+        }
+        div.item-3 {
+            padding-top: 5px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 5px;
+        }
+        .menu {
+            position: relative;
+        }
+        .menu:hover .sub-menu {
+            display: block;
+        }
+        .menu:hover .menu-3 {
+            display: block;
+        }
+        .item-3 {
+            position: relative;
+            align-content: center;
+        }
+        .sub-menu-4{
+            display: none;
+            position: absolute;
+            background-color:rgba(170, 81, 96, 0.637);
+            top: 0px;
+            left: 84px;
+            justify-content: center;
+        }
+        .sub-menu-4 div:hover {
+            color: white;
+            background-color: rgba(152, 251, 152, 0.521);
+        }
+        .menu-3:hover .sub-menu-4{
+            display: block;
+        }
+        .item-3:hover{
+            color: white;
+            background-color: rgba(152, 251, 152, 0.521);
+        }
+        .sub-menu-4 div:hover{
+            color: white;
+            background-color: rgba(152, 251, 152, 0.521);
+        }
+        .sub-menu-4 div {
+            color:black;
+            padding-top: 5px;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-bottom: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="nav-menu">
+        <div class="menu">Item 1
+            <div class="sub-menu">
+                <div>Item 1</div>
+                <div>Item 2</div>
+                <div>Item 3</div>
+                <div>Item 4</div>
+            </div>
+        </div>
+        <div class="menu">Item 2
+            <div class="sub-menu">
+                <div>Item 1</div>
+                <div>Item 2</div>
+                <div>Item 3</div>
+                <div>Item 4</div>
+            </div>
+        </div>
+        <div class="menu">Item 3
+            <div class="menu-3">
+                <div class="item-3">Item 1</div>
+                <div class="item-3">Item 2</div>
+                <div class="item-3">Item 3</div>
+                <div class="item-3">Item 4
+                    <div class="sub-menu-4">
+                        <div class="item-4">Item 1</div>
+                        <div class="item-4">Item 2</div>
+                        <div class="item-4">Item 3</div>
+                        <div class="item-4">Item 4
+                            <div>Item 1</div>
+                            <div>Item 2</div>
+                            <div>Item 3</div>
+                            <div>Item 4</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu">Item 4</div>
+    </nav>
+    
+</body>
+</html>
