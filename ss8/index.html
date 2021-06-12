@@ -30,7 +30,6 @@
             background-color:rgba(170, 81, 96, 0.637);
             top: 38px;
             left: 0px;
-            justify-content: center;
         }
         .sub-menu div {
             padding-top: 5px;
@@ -45,7 +44,6 @@
             background-color:rgba(170, 81, 96, 0.637);
             top: 38px;
             left: 0px;
-            justify-content: center;
         }
         div.item-3 {
             padding-top: 5px;
@@ -64,7 +62,6 @@
         }
         .item-3 {
             position: relative;
-            align-content: center;
         }
         .sub-menu-4{
             display: none;
@@ -72,28 +69,48 @@
             background-color:rgba(170, 81, 96, 0.637);
             top: 0px;
             left: 84px;
-            justify-content: center;
-        }
-        .sub-menu-4 div:hover {
-            color: white;
-            background-color: rgba(152, 251, 152, 0.521);
         }
         .menu-3:hover .sub-menu-4{
             display: block;
+            white-space: nowrap;
         }
         .item-3:hover{
+            display: block;
             color: white;
             background-color: rgba(152, 251, 152, 0.521);
         }
-        .sub-menu-4 div:hover{
+        .item-4:hover{
+            display: block;
             color: white;
             background-color: rgba(152, 251, 152, 0.521);
         }
-        .sub-menu-4 div {
+        div.item-4 {
             color:black;
             padding-top: 5px;
-            padding-left: 30px;
-            padding-right: 30px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 5px;
+        }
+        .item-4 {
+            position: relative;
+        }
+        .sub-menu-5 {
+            display: none;
+            position:absolute;
+            top:0;
+            left: 84px;
+            background-color: rgba(170, 81, 96, 0.637); 
+            color:black;  
+        }
+        .item-4:hover .sub-menu-5{
+            display: block;
+            white-space: nowrap;
+        }
+        .sub-menu-5 div {
+            color:black;
+            padding-top: 5px;
+            padding-left: 20px;
+            padding-right: 20px;
             padding-bottom: 5px;
         }
 
@@ -128,10 +145,12 @@
                         <div class="item-4">Item 2</div>
                         <div class="item-4">Item 3</div>
                         <div class="item-4">Item 4
-                            <div>Item 1</div>
-                            <div>Item 2</div>
-                            <div>Item 3</div>
-                            <div>Item 4</div>
+                            <div class="sub-menu-5" >
+                               <div>Item 1</div>
+                               <div>Item 2</div>
+                               <div>Item 3</div>
+                               <div>Item 4</div>
+                            </div>
                         </div>
                     </div>
                 </div>
