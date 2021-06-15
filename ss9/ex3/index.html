@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .reload {
+       display: flex;
+       flex-direction: row-reverse;
+    }
+    #reloadBtn {
+        border: none;
+        font-family:'Courier New', Courier, monospace;
+        background-color: white;
+    }
+    
+    .quote {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 600px;
+        font-family:'Courier New', Courier, monospace;
+    }
+    .quote-text {
+        font-size: 20px;
+    }
+    .author-text {
+        font-size: 13px;
+    }
+    .reloadIcon {
+        width: 15px;
+        height: 15px;
+    }
+    </style>
+</head>
+<body>
+    <div class="reload">
+       <button id="reloadBtn">Reload</button>
+       <img class="reloadIcon" src="refresh.svg">
+    </div>
+    <div class="quote">
+       <p id="quote" class="quote-text">Wisdom begins in wonder.</p>
+       <p id="author" class="author-text">Socrates</p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
